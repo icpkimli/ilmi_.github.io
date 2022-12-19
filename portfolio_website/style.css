@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0 ;
+	padding: 0 ;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background: #eff4fd;
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+nav{
+	display: flex;
+	width: 84%;
+	margin: auto;
+	padding: 20px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 15px 25px;
+	font-size: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	color: orange;
+}
+.logo {
+	color: #000;
+	font-size: 35px;
+	font-weight: 600;
+	font-style: italic;;
+}
+.logo  span{
+	color: orange;
+}
+.header-text{
+	margin-left: 8%;
+	margin-top: 13%;
+}
+.header-text h1{
+	font-size: 50px;
+	color: #212121;
+	margin-bottom: 20px;
+}
+.header-text span{
+	color: orange;
+}
+.header-text p{
+	font-size: 20px;
+	color: #555;
+	line-height: 22px;
+}
+.image{
+	width: 40%;
+	height: 75%;
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+}
+.image img{
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-40%);
+	border: 5px solid transparent;
+	padding: 15px;
+    border-color: #000;
+}
+
+/* -------------------------------------------about------------------------------------------------------- */
+#about{
+	text-align: center;
+	padding: 80px 0;
+	margin-top: 200px;
+	margin-left: 200px;
+	margin-right: 200px;	
+}
+.sub-title{
+	font-weight: 500;
+	font-size: 50px;
+	color: #000;
+	text-decoration: underline orange;
+}
+
+.info1 p{
+	color:#555;
+	font-size: 20px;  
+}
+.info2 h3{
+	padding: 15px 10px;
+	display: inline-block;
+	margin: 30px;
+	border-style: solid ;
+	word-break: break-all;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.info2 i{
+	color: orange;
+}
+.btn {
+  background-color: #000; 
+  border: none;
+  color: white;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 25px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn1{
+  background-color: #eff4fd; 
+  color: black; 
+  border: 2px solid #000;
+  border-radius: 12px;	
+}
+.btn1:hover{
+  background-color: #000;
+  color: white;
+}
+/* --------------------------------------skills----------------------------------- */
+#skills{
+	padding: 30px 0;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.skills.container{
+	grid-row-gap: 32px;
+	text-align: center;
+}
+.sub-title{
+	margin-bottom: 100px;
+	text-align: center;
+	margin-top: auto;
+}
+.skills-data{
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	position: relative;
+	font-weight: 600;
+	padding: 8px 16px;
+	margin-bottom: 50px;
+	border-radius: 8px;
+	box-shadow: 0 4px 25px rgb(14,36,49,15);
+}
+.skills-names{
+	display: flex;
+	align-items: center;
+}
+.skills-bar{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: orange;
+	height: 4px;
+	border-radius: 8px;
+	z-index: 1;
+}
+.skills-html{
+	width: 80%;
+}
+.skills-css{
+	width: 75%;
+}
+.skills-js{
+	width: 70%;
+}
+.skills-php{
+	width: 65%;
+}
+.skills-sql{
+	width: 60%;
+}
+.skills-img{
+	box-shadow: 0 4px 25px rgb(14,36,49,15);
+	margin-top: 30px;
+	width: 35%;
+	height: 50%;
+	position: absolute;
+	right: 80px;
+	float: right;
+}
+/* ---------------------------------------portfolio--------------------------------------- */
+#work{
+	padding: 50px 0;
+}
+.work-list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 32px 0;
+}
+.work-img{
+	height: 320px;
+	width: 416px;
+	border-radius: 16px;
+	margin: 32px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.work-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.work-img:hover img{
+	transform: scale(1.2);
+}
+/* --------------------contact------------------ */
+.conttact-input{
+	margin-left: 150px;
+	margin-right: 70px;
+	width: 75%;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 20px;
+	border-radius: 8px;
+	border: 4px solid #555;
+	outline: none;
+	margin-bottom: 15px;
+}
+.btn2{
+     margin-left: 550px;
+	 margin-right: 100px;
+	 padding: 18px 50px;
+     background-color: #eff4fd; 
+     color: black; 
+     border: 2px solid #555;
+     border-radius: 8px;
+	font-size:15px;
+}
+.btn2:hover{
+  background-color: #555;
+  color: white;
+}
+.copyright{
+	width: 100%;
+	text-align: center;
+	padding: 25px 0;
+	background: #555;
+	font-weight: 300;
+	margin-top: 20px;
+	color: #fff;
+}
+.copyright i{
+	color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
